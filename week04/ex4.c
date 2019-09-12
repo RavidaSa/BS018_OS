@@ -4,11 +4,11 @@
 #define MAX_LEN 256
 
 int main() {
-    char inp[MAX_LEN];
+    char input[MAX_LEN];
     while(1) {
         printf("   $ ");
-        fgets(inp, MAX_LEN, stdin);
-        system(inp);
+        fgets(input, MAX_LEN, stdin);
+        system(input);
     }
     
     return 0;
