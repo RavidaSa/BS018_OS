@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define TRUE 1
-
-int main(void) {
-	char command[100];
-	while (TRUE) {
+int main() {
+	char arr[100];
+	while (1) {
 		printf("> ");
-		scanf("%s", command);
-		system(command);
+		scanf("%s", arr);
+		system(arr);
 	}
-	return EXIT_SUCCESS;
+	return 0;
 }
