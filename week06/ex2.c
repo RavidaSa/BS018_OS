@@ -3,17 +3,14 @@
 #define N 100
 
 void main() {
-
-    int f;
-
     int ar[2];
     
     pipe(ar);
     
-    char *str1 = "Text to copy";
+    char str1[] = "Text to copy";
     char str2[N];
 
-    f = fork();
+    int f = fork();
 
     if (f > 0) 
     {
@@ -21,7 +18,7 @@ void main() {
     } 
     else if (f == 0) 
     {
-        read(ar[0], str2, sizeof(str1));
+        read(ar[0], str2, sizeof(str2));
         printf("%s\n", str2);
     }
 }
