@@ -1,0 +1,3 @@
+If hit/miss ratio is increased this means that sequence repeats. Ex: 1  1 
+If otherwise decreased -  means that all elements of sequence are unique. Ex: 1 2 3 4 etc. Every time we will have miss and since this new page 
+will be created.
