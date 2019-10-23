@@ -1,0 +1,8 @@
+-rw-r--r-- 1 ravi ravi 0 окт 23 22:24 _ex3.txt
+-rwxr--rwx 1 ravi ravi 0 окт 23 22:24 _ex3.txt
+-rwxrwxrwx 1 ravi ravi 0 окт 23 22:24 _ex3.txt
+
+
+660: For user and group: read and write
+775: read and execute for user, group and others, write for user and groups
+777: read, write and execute for user, group and other
