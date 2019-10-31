@@ -1,0 +1,11 @@
+Program 1.
+Hello
+Hello
+Child and parent have same buffer, so when the parent makes a second printf it prints everything from buffer
+
+Program 2.
+Hello
+\n
+\n
+Adding "\n" make buffer empty
+Because child inherits buffer from its parent process, then it executes printf("\n") twice by child processes
