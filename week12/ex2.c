@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
                 write(outputs[i], &byte, 1);
             }
         }
-        is_end = read(input, &byte, 1);
+        end = read(input, &byte, 1);
     }
 
     close(input);
