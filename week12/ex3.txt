@@ -10,16 +10,23 @@ Changing DBUF_SIZE to 256:
 [ravi@ravi-pc week12]$ gcc -DBUF_SIZE=256 copy.c -o copy
 [ravi@ravi-pc week12]$ time ./copy file1 file2
 
-real    0m0,002s
-user    0m0,002s
-sys     0m0,000s
+real    0m0,014s
+user    0m0,000s
+sys     0m0,013s
 
 Including O_SYNC:
+[ravi@ravi-pc week12]$ ^C
 [ravi@ravi-pc week12]$ gcc copy.c -o copy
 [ravi@ravi-pc week12]$ time ./copy file1 file2
 
-real    0m0,002s
-user    0m0,002s
+real    0m0,004s
+user    0m0,004s
 sys     0m0,000s
 
 Including O_SYNC and changing DBUF_SIZE to 256:
+[ravi@ravi-pc week12]$ gcc -DBUF_SIZE=256 copy.c -o copy
+[ravi@ravi-pc week12]$ time ./copy file1 file2
+
+real    0m0,007s
+user    0m0,000s
+sys     0m0,007s
